@@ -39,8 +39,8 @@ class ArsipPage extends Component {
 
     return (
       <section className="archives-page">
-        <div className="flex mx-2 justify-between">
-          <p className="text-center content-center font-bold text-4xl">
+        <div className="flex justify-between mx-2">
+          <p className="content-center text-4xl font-bold text-center">
             Archived
           </p>
           <SearchNote onSearch={this.onSearch} />
@@ -52,8 +52,8 @@ class ArsipPage extends Component {
 }
 
 ArsipPage.propTypes = {
-  onSearch: PropTypes.func.isRequired,
-  defaultKeyword: PropTypes.string.isRequired,
+  onSearch: PropTypes.func,
+  defaultKeyword: PropTypes.string,
 };
 
 export default ArsipPageWrapper;

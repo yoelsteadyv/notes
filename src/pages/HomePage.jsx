@@ -39,8 +39,8 @@ class HomePage extends Component {
     const notes = searchNotes(this.state.notes, this.state.keyword);
     return (
       <section className="homepage">
-        <div className="flex mx-2 justify-between">
-          <p className="text-center content-center font-bold text-4xl">Notes</p>
+        <div className="flex justify-between mx-2">
+          <p className="content-center text-4xl font-bold text-center">Notes</p>
           <SearchNote onSearch={this.onSearch} />
         </div>
 
@@ -52,8 +52,8 @@ class HomePage extends Component {
 }
 
 HomePage.propTypes = {
-  onSearch: PropTypes.func.isRequired,
-  defaultKeyword: PropTypes.string.isRequired,
+  onSearch: PropTypes.func,
+  defaultKeyword: PropTypes.string,
 };
 
 export default HomePageWrapper;
